@@ -1,0 +1,17 @@
+[
+    {
+        "imageUrl": "https://raw.githubusercontent.com/tekies2025/rangoliImages/refs/heads/main/sampleImage1.jfif",
+        "title": "Design 1",
+        "price": "$10"
+    },
+    {
+        "imageUrl": "https://raw.githubusercontent.com/tekies2025/rangoliImages/refs/heads/main/sampleImage2.jfif",
+        "title": "Design 2",
+        "price": "$12"
+    },
+    {
+        "imageUrl": "https://raw.githubusercontent.com/tekies2025/rangoliImages/refs/heads/main/sampleImage3.jfif",
+        "title": "Design 3",
+        "price": "$15"
+    }
+]

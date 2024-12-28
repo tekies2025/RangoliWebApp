@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #80d3cf;
+    color: rgb(18, 17, 17);
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-button i{
+    font-size: 1.2rem;
+        color: black;
+}
+
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap content to new rows */
+    gap: 20px; /* Space between the cards */
+    justify-content: center; /* Center the cards */
+    gap: 20px;
+}
+
+.design-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+
+    /* Fixed width for 3 cards per row */
+    flex: 1 1 calc(33.33% - 40px); /* Ensure 3 cards fit per row */
+    max-width: calc(33.33% - 40px); /* Same as above to avoid exceeding */
+    box-sizing: border-box; /* Include padding and border in size */
+}
+
+.design-card img {
+    width: 100%; /* Make images scale to fit the card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+.gallery-item h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.gallery-item p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.design-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 15px; /* Space around each card */
+    padding: 10px; /* Space inside each card */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+
+
+/* For smaller screens */
+@media (max-width: 700px) {
+    .design-card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row for tablets */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 550px) {
+    .design-card {
+        flex: 1 1 100%; /* 1 card per row for phones */
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .design-card {
+        flex: 1 1 100%; /* 1 card per row for phones */
+        max-width: 70%;
+    }
+}
