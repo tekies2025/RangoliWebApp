@@ -36,7 +36,7 @@ async function populateSampleDesignDataWithCache() {
                 <img src="${design.imageUrl}" alt="${design.title}">
                 <h3>${design.title}</h3>
                 <p>Price: ${design.price}</p>
-                <button onclick="window.location.href='GallaryPage.html'">View More</button>
+                <button onclick="window.location.href='gallaryPage.html'">View More</button>
             `;
 
             galleryContainer.appendChild(card);
